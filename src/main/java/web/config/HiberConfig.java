@@ -19,7 +19,7 @@ import java.util.Properties;
 @Configuration
 @PropertySource("classpath:db.properties")
 @EnableTransactionManagement
-@ComponentScan("web")
+@ComponentScan(basePackages = {"web.service", "web.dao"})
 public class HiberConfig {
 
     @Autowired
