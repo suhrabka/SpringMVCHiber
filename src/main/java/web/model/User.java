@@ -1,9 +1,9 @@
 package web.model;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 
 @Entity
-@Table(name ="Users")
+@Table(name = "Users")
 public class User {
 
     @Id
@@ -18,9 +18,9 @@ public class User {
     private String surname;
 
     @Column(name = "department")
-    private  String department;
+    private String department;
 
-    public User(){}
+    public User() {}
 
     public User(String name, String surname, String department) {
         this.name = name;
